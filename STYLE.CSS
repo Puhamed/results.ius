@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+  margin: 10,10,10,10;
+  padding: 10,10,10,10;
+  font-family: 'Inter', sans-serif;
+  background: #f4f4f4;
+  color: #374151;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form Styles */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: #0891b2;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #5cb85c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Header Styles */
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+nav a {
+  font-weight: 600;
+  font-size: 0.9rem;
+  position: relative;
+  padding: 8px 0;
+  color: #0891b2;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #055160;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  main {
+      display: block;
+      margin-top: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  header, .header-inner {
+      padding: 0 16px;
+  }
+
+  form {
+      padding: 16px;
+  }
+
+  input[type="submit"] {
+      width: 100%;
+  }
+
+  .container {
+      padding: 0 16px;
+  }
+
+  ul {
+      padding: 0;
+  }
+
+  li {
+      margin: 8px 0;
+  }
+}
+
+/* Additional Styles for Articles and Pagination */
+section.articles-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+article.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgb(0 0 0 / 0.15);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.pagination button {
+  background: #0891b2;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button[disabled] {
+  background: #9ca3af;
+  cursor: default;
+}
