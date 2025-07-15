@@ -103,9 +103,9 @@
 <br><br>
 
         <div class="buttons-container">
-            <button class="nav-button" onclick="window.location.href='Quran_scince.php'"><b>قسم علوم القرآن الكريم</b></button>
-            <button class="nav-button" onclick="window.location.href='quran_explain.php'"><b>قسم تفسير القرآن الكريم </b></button>
-            <button class="nav-button" onclick="window.location.href='readings.php'"><b>قسم القراءات القرنية </b></button>
+            <a class="nav-button" href='Quran_scince.php'"><b>قسم علوم القرآن الكريم</b></a>
+            <a class="nav-button" href='quran_explain.php'"><b>قسم تفسير القرآن الكريم </b></a>
+            <a class="nav-button" href='readings.php'"><b>قسم القراءات القرنية </b></a>
          </div>
     </main>
 </body>
